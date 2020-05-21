@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header1">Header1</h1>
+    <h1 id="header2" onclick="test()">Header2</h1>
+    <script>
+      //문서객체가 ID가 부여된 상태라면
+      let header1 = document.getElementById("header1");
+      console.log(header1);
+      console.log(header1.innerText); //텍스트 노드 값 가져오기
+
+      function test() {
+        //header2의 텍스트 노드 값 변경
+        let header2 = document.getElementById("header2");
+        // header2.innerText = "with getElementById";
+        // header2.innerHTML = "<p style='color:red'>with getElementById";
+      }
+    </script>
+  </body>
+</html>

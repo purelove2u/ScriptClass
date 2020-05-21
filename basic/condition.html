@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let input = Number(prompt("숫자를 입력해주세요"));
+      let input = prompt("숫자를 입력해주세요");
+
+      // input 값에 따라 양수, 음수, 0 출력하기
+      if (input > 0) {
+        console.log("양수");
+      } else if (input < 0) {
+        console.log("음수");
+      } else if (isNaN(input)) {
+        console.log("숫자가 아님.");
+      } else {
+        console.log("0");
+      }
+    </script>
+  </body>
+</html>
