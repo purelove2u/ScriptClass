@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="header1">Header1</h1>
+    <h1 class="header1">Header2</h1>
+    <h1 class="header1">Header3</h1>
+    <h1 class="header1">Header4</h1>
+    <h1 class="header1">Header5</h1>
+    <h1 class="header1">Header6</h1>
+    <script>
+      // 문서객체 클래스가 부여된 상태라면?
+      let header1 = document.getElementsByClassName("header1");
+      console.log(header1);
+      console.log(header1[0]);
+      console.log(header1[0].innerText);
+      console.log(header1.item(0));
+
+      for (var i = 0; i < header1.length; i++) {
+        console.log(header1.item(i));
+      }
+    </script>
+  </body>
+</html>

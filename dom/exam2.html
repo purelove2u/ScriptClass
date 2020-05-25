@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      src="https://img.khan.co.kr/news/2019/11/29/l_2019112901003607500286631.jpg"
+      alt="강아지"
+    />
+    <button type="button" onclick="changeImg()">변경</button>
+    <script>
+      function changeImg() {
+        // 버튼을 누르면 현재 이미지를 변경
+        let img = document.querySelector("img");
+        img.src = "pu.jpg";
+        img.alt = "개";
+      }
+    </script>
+  </body>
+</html>

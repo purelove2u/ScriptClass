@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="button" value="Turn on the light" onclick="turnOn()" />
+    <img src="pic_bulboff.gif" alt="불꺼진 전구" />
+    <input type="button" value="Turn off the light" onclick="turnOff()" />
+    <script>
+      let on = document.querySelector("img");
+      function turnOn() {
+        on.src = "pic_bulbon.gif";
+        on.alt = "불켜진 전구";
+      }
+      function turnOff() {
+        on.src = "pic_bulboff.gif";
+        on.alt = "불꺼진 전구";
+      }
+    </script>
+  </body>
+</html>

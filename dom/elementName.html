@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- name 속성 : 전역속성 -->
+    <ul name="ul">
+      <li>List item1</li>
+      <li>List item2</li>
+      <li>List item3</li>
+      <li>List item4</li>
+      <li>List item5</li>
+    </ul>
+    <script>
+      // Name 속성으로 찾기( ID 가 부여되지 않았기 때문에)
+      let ul = document.getElementsByName("ul");
+      console.log(ul);
+      console.log(ul[0].children[1]);
+      console.log(ul[0].children[1].innerText);
+      console.log(ul[0].children);
+    </script>
+  </body>
+</html>

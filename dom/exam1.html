@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="ex">DIV 영역</div>
+    <div>
+      <a href="#" onclick="get()">div 요소 내용 출력하기</a>
+    </div>
+    <div>
+      <a href="#" onclick="set('변경되었습니다.')">div 요소 내용 변경</a>
+    </div>
+
+    <script>
+      function get() {
+        // ex 가 가지고 있는 div 영역 내용 출력
+        let ex = document.getElementById("ex");
+        console.log(ex.innerText);
+      }
+
+      function set(text) {
+        // 넘겨받은 문자열을 div 영역에 출력
+        ex.innerText = text;
+      }
+    </script>
+  </body>
+</html>
