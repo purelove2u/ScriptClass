@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="header1">Header1</h1>
+    <h1 id="header2">Header2</h1>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      //문서객체가 ID가 부여된 상태라면
+      let header1 = $("#header1");
+      console.log(header1);
+      console.log(header1.text()); //텍스트 노드 값 가져오기
+
+      //header2의 텍스트 노드 값 변경
+      // header2.innerText = "with getElementById";
+      // header2.innerHTML = "<p style='color:red'>with getElementById";
+      let header2 = $("#header2");
+      header2.html("<p style= 'color:red'> with getelementById()</p>");
+    </script>
+  </body>
+</html>

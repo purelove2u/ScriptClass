@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="name">이름</label>
+    <input type="text" name="name" id="name" />
+    <p>
+      입력 필드를 벗어나면 소문자로 변경됩니다.
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      // function lower() {
+      //   let name = document.getElementById("name");
+      //   name.value = name.value.toLowerCase();
+      // }
+
+      $(function () {
+        // $("#name").change(function () {
+        //   let name = $("#name");
+        //   name.val(name.val().toLowerCase());
+        // });
+        $("#name").on("change", function () {
+          let name = $("#name");
+          name.val(name.val().toLowerCase());
+        });
+      });
+    </script>
+  </body>
+</html>

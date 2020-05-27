@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>List item1</li>
+      <li>List item2</li>
+      <li>List item3</li>
+      <li>List item4</li>
+      <li>List item5</li>
+      <li>List item6</li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      // Tag 이름으로 찾기( ID 가 부여되지 않았기 때문에)
+      let ul = $("ul");
+      console.log(ul);
+      console.log(ul.children());
+      console.log(ul.children().text());
+    </script>
+  </body>
+</html>

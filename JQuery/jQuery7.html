@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" />
+    <input type="password" name="" id="" />
+    <input type="radio" name="" id="" />
+    <input type="checkbox" name="" id="" />테스트
+    <button type="button">Click</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("[type='text']").val("Hello Jquery!!");
+        $("[type='checkbox']").attr("checked", "checked");
+      });
+      //버튼이 클릭되면 password 값 가져와서 콘솔에 출력
+      $(function () {
+        $("button").click(function () {
+          console.log($("[type='password']").val());
+        });
+      });
+    </script>
+  </body>
+</html>
