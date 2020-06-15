@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h4>정규표현식과 일치하는 문자열 리턴</h4>
+        <p id="exec"></p>
+    </div>
+    <div>
+        <h4>정규표현식과 일치하는 문자열 리턴</h4>
+        <p id="match"></p>
+    </div>
+    <div>
+        <h4>정규표현식과 일치하는 문자열에 대해 boolean 리턴</h4>
+        <p id="test"></p>
+    </div>
+    <div>
+        <h4>정규표현식과 일치하는 문자열 리턴</h4>
+        <p id="search"></p>
+    </div>
+    <script>
+        let content = "Javascript jQeury Ajax";
+        const regexp = /Ajax/;
+
+        document.getElementById("exec").innerText = regexp.exec(content);
+        document.getElementById("match").innerText = content.match(regexp);
+        document.getElementById("test").innerText = regexp.test(content);
+        document.getElementById("search").innerText = content.search(regexp);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor, Ipsum sit amet consectetur adipisicing Ipsum elit. Animi fuga quia inventore amet Ipsum quos adipisci esse nobis ipsa, sit ad earum facere. Commodi dolore alias asperiores quos, quae deserunt! Ratione.</p>
+    <script>
+        let p1 = document.querySelector("p").innerText;
+
+        console.log("----- i 플래그 ----- ");
+        console.log(p1.match(/ipsum/i));
+        console.log("");
+
+        console.log("----- gi 플래그 ----- ");
+        console.log(p1.match(/ipsum/gi));
+        console.log("");
+
+        console.log("----- gm 플래그 ----- ");
+        console.log(p1.match(/ipsum/gm));
+        console.log("");
+
+    </script>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum consectetur illo quod esse vitae excepturi autem natus aliquid alias eos aliquam delectus, possimus assumenda eius sapiente voluptate veniam! Eos, aspernatur.</p>
+</body>
+</html>
