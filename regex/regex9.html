@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const input =
+        "Regex pros know the difference between\n" +
+        "<i>greedy</i> and <i>lazy</i> matching.";
+      const pattern = /<i>(.*?)<\/i>/gi;
+      //console.log(input.match(pattern));
+      console.log(input.replace(pattern, "<strong>$1</strong>"));
+    </script>
+  </body>
+</html>

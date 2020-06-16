@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        031-873-9456 <br>
+        010-1237-8027 <br>
+        02-890-0987 <br>
+        010-3333-9087 <br>
+        070-1234-12345
+    </p>
+    <p id="result" style="color:red"></p>
+    <script>
+        // p 안에 있는 전화번호 가져오기
+        let p1 = document.querySelector("p").innerText;
+        // 결과 보여줄 영역 가져오기
+        let result = document.querySelector("#result");
+        // 정규식
+        const regexp = /^\d{2,3}-[0-9]{3,4}-\d{4}$/gm;
+        // 전화번호가 제대로 입력되었는지 확인하기
+        result.innerText = p1.match(regexp);
+    </script>
+</body>
+
+</html>

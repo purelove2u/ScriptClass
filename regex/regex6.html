@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input type="text" name="name" onkeyup="name_check(this.value)" />
+    </div>
+    <p id="result" style="color: red;"></p>
+    <script>
+      function name_check(name) {
+        let result = document.querySelector("#result");
+
+        const regexp = /^[가-힣]{2,4}$/;
+        let bool = regexp.test(name);
+        if (!bool) {
+          result.innerHTML = "이름을 확인해 주세요";
+        } else {
+          result.innerHTML = "";
+        }
+      }
+    </script>
+  </body>
+</html>
